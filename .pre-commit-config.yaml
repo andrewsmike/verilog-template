@@ -1,0 +1,15 @@
+repos:
+  - repo: local
+    hooks:
+      - id: verible-fmt
+        name: verible-fmt
+        stages: [commit]
+        language: system
+        entry: verible-verilog-format --inplace
+        types: [system-verilog]
+      - id: verible-lint
+        name: verible-lint
+        stages: [commit]
+        language: system
+        entry: verible-verilog-lint
+        types: [system-verilog]
