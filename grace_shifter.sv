@@ -1,4 +1,4 @@
-module Shifter_grace #(
+module grace_shifter #(
     parameter int BitWidth = 32
 ) (
     input En,  // Enable the shifter
@@ -54,7 +54,7 @@ module Shifter_grace #(
       default : out = ReversedShifted;
     endcase
   assign dOUT = out;
-endmodule : Shifter_grace
+endmodule : grace_shifter
 
 /*
 module Shifter_tb;
