@@ -13,3 +13,9 @@ repos:
         language: system
         entry: verible-verilog-lint
         types: [system-verilog]
+      - id: pytest
+        name: pytest
+        stages: [commit]
+        language: system
+        entry: pytest
+        types: [python]
