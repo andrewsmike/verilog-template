@@ -1,6 +1,3 @@
-# This file is public domain, it can be freely copied without restrictions.
-# SPDX-License-Identifier: CC0-1.0
-
 from cocotb import test
 from cocotb.triggers import Timer
 
@@ -10,6 +7,10 @@ from test_module import test_module
 async def grace_shifter_test_one(dut):
     """
     Verify shifter works as expected.
+
+    TODO:
+    - Mess with timing, understand propagation speed better.
+    - Switch to brute-force verification.
     """
     dut.En <= 1
     dut.Left <= 1
